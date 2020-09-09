@@ -11,6 +11,8 @@ public class Constants {
 
     public static final String IMAGE_BASE_PATH = "http://image.tmdb.org/t/p/w185/";
 
+    public static final String TRAILER_BASE_PATH = "https://www.youtube.com/watch?v=";
+
     public static final String MOVIE_COUNT = "15";
 
     public static final String LANG = "en-US";

@@ -55,4 +55,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
     implementation "com.github.takusemba:multisnaprecyclerview:$multisnap_version"
+
+    // Video Player
+    implementation "com.github.HamidrezaAmz:MagicalExoPlayer:1.0.15"
 }
