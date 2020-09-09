@@ -21,7 +21,7 @@ public class MovieListViewHolder extends RecyclerView.ViewHolder {
 
     public MovieListViewHolder(@NonNull @NotNull View itemView) {
         super(itemView);
-//        this.moviePosterIv = itemView.findViewById(R.id.moviePosterIv);
+        this.moviePosterIv = itemView.findViewById(R.id.moviePosterIv);
         this.titleTv = itemView.findViewById(R.id.titleTv);
         this.descTv = itemView.findViewById(R.id.descTv);
         this.releaseDateTv = itemView.findViewById(R.id.releaseDateTv);

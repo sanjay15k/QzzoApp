@@ -1,11 +1,24 @@
 package com.qzzo.android.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Movie {
 
+    @Expose
+    @SerializedName("poster_path")
     private String posterUrl;
+    @Expose
+    @SerializedName("title")
     private String title;
+    @Expose
+    @SerializedName("overview")
     private String description;
+    @Expose
+    @SerializedName("release_date")
     private String releaseDate;
+    @Expose
+    @SerializedName("vote_average")
     private String rating;
 
     public Movie(String posterUrl, String title, String description, String releaseDate, String rating) {

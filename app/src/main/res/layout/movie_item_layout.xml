@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:scaleType="centerCrop"
-            android:src="@drawable/poster_temp"/>
+            android:src="@drawable/default_movie_poster"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -28,6 +28,7 @@
         android:layout_weight="1"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
         android:orientation="vertical">
 
         <TextView
@@ -36,6 +37,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/prompt_bold"
             android:text="Time Is The Enemy"
+            android:maxLines="1"
+            android:ellipsize="end"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"/>

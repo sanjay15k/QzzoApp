@@ -11,6 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.qzzo.android.listener.CreateApiCall;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -34,6 +35,13 @@ public abstract class BaseActivity extends AppCompatActivity {
     private void init(){
         retryButton.setVisibility(View.GONE);
         progressBarImageView.setVisibility(View.GONE);
+    }
+
+    public void showRetryButton(boolean isVisible, CreateApiCall retrySendingRequest){
+        if(retrySendingRequest != null) {
+            retryButton.setOnClickListener(v -> retrySendingRequest.sendApiRequest());
+        }
+        retryButton.setVisibility(isVisible?View.VISIBLE:View.GONE);
     }
 
     private void loadProgressGifImageView(){
