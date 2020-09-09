@@ -1,0 +1,2 @@
+rootProject.name = "Qzzo App"
+include ':app'
