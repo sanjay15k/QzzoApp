@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.qzzo.android.ui.MovieDetailActivity;
 import com.qzzo.android.R;
 import com.qzzo.android.models.Movie;
@@ -75,7 +77,12 @@ public class MovieRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
             Trailer trailer = trailers.get(position);
             String trailerURL = Constants.TRAILER_BASE_PATH + trailer.getKey();
             System.out.println("PATH IS : "+trailerURL);
-            trailerListViewHolder.videoPlayer.setSource(trailerURL);
+            trailerListViewHolder.videoPlayer.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                @Override
+                public void onReady(@NotNull YouTubePlayer youTubePlayer) {
+                    youTubePlayer.loadVideo(trailerURL, 0);
+                }
+            });
         }
     }
 

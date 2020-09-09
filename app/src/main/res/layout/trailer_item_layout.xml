@@ -11,13 +11,13 @@
         app:cardElevation="5dp"
         app:cardCornerRadius="20dp">
 
-        <com.potyvideo.library.AndExoPlayerView
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/videoPlayer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:andexo_show_controller="true"
-            app:andexo_full_screen="true"
-            app:andexo_resize_mode="Fit"/>
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:useWebUi="true"
+            app:showFullScreenButton="true"/>
 
     </androidx.cardview.widget.CardView>
 
