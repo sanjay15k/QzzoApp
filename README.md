@@ -2,14 +2,13 @@
 
 ## About
 For consuming the rest API from <a href="https://developers.themoviedb.org/3/movies/get-popular-movies" target="_blank">Movie DB</a>, I have used retrofit2.
-
 <br>
 
 ## APP Screenshots
 <div align="center">
-<img width="300" height="650" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633121-eddcd680-f2ef-11ea-82dc-2fce81fc71d7.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="300" height="650" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633155-fc2af280-f2ef-11ea-8aed-d25dcf637909.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="300" height="650" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633165-fe8d4c80-f2ef-11ea-98f4-070dd1d06303.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="250" height="541" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633121-eddcd680-f2ef-11ea-82dc-2fce81fc71d7.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="250" height="541" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633155-fc2af280-f2ef-11ea-8aed-d25dcf637909.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="250" height="541" class="img-fluid text-center" src="https://user-images.githubusercontent.com/35829879/92633165-fe8d4c80-f2ef-11ea-98f4-070dd1d06303.png"/>&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 <br>
@@ -30,7 +29,8 @@ For consuming the rest API from <a href="https://developers.themoviedb.org/3/mov
 <br>
 
 ## How to run?
-* Download/Clone the project and open in Android studio.
+* Download apk file from app/release package and directly run on your android device or
+* Clone the project and open in Android studio.
 * Build the apk.
 * <b>NOTE: Please verify that your internet is working correctly before running the app.</b>
 
